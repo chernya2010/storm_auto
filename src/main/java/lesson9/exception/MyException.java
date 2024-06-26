@@ -1,11 +1,6 @@
 package main.java.lesson9.exception;
 
 public class MyException extends Exception{
-    public static void main(String[] args) throws Exception {
-        MyException myException = new MyException("Какая то ошибка");
-        myException.g();
-        myException.f();
-    }
 
     MyException(String message){
         super(message);
@@ -19,7 +14,7 @@ public class MyException extends Exception{
     public void println(String s) throws MyException {
         try {
             throw new MyException(s);
-        } catch (Exception ex){
+        } catch (MyException ex){
             System.out.println(s);
         } finally {
             System.out.println();
@@ -31,30 +26,68 @@ public class MyException extends Exception{
     "NullPointerException thrown successfully".*/
     public void nullPointer(){
         try {
-            MyException exception1 = new MyException();
-            exception1 = null;
-            exception1.nullPointer();
+            String str = null;
+            str.length();
         } catch (NullPointerException ex){
             System.out.println("NullPointerException thrown successfully");
-            throw ex;
         }
     }
     /*Создайте методы f() и g(), так чтобы f() вызывал метод g().
     В методе g() выбросите MyException, словите его в методе f(),
     и там же в catch блоке поделите 1 на 0. Проверьте,
     что при вызове этого метода вылетает ArithmeticException.*/
-    public boolean g() throws Exception {
-        throw new MyException();
+    public void g() throws MyException {
+        throw new RuntimeException(new MyException("Ошибка из метода g()"));
     }
-
-    public void f() throws Exception {
+    public void f(){
+        int a = 0;
         try {
             g();
-        } catch (MyException ex){
-            System.out.println(ex.g());
-            int a = 1 / 0;
+        } catch (MyException ex) {
+            int b = 10 / a;
         }
     }
 
+    /*Создайте метод wrapException(Exception e),
+    который будет возвращать RuntimeException,
+    созданный с аргументом е в конструкторе.*/
+    public void wrapException(Exception e){
+        throw new RuntimeException(e);
+    }
 
-}
+    /*Создайте метод unwrapException(Exception e),
+     который будет выбрасывать сause исключения e.*/
+    public void unwrapException(Exception e){
+        try {
+            ArithmeticException e2 = new ArithmeticException("ArithmeticException из метода unwrapException");
+            e2.initCause(new NullPointerException("NullPointerException из метода unwrapException"));
+            throw e2;
+        } catch(ArithmeticException e2) {
+            System.out.println(e2.getCause());
+        }
+    }
+
+    /*Создайте метод generateArrayOutOfBoundsException(int i),
+    который будет пытаться обратиться к i-му элементу массива
+    и выбрасывать исключение, потому что такого элемента в
+    массиве нет.*/
+    public void generateArrayOutOfBoundsException(int i){
+        int[] m = {i};
+        try {
+            m[10] = 999;
+        } catch (ArrayIndexOutOfBoundsException exception){
+            System.out.println("Ошибка! Индекс за пределами массива\n" + exception);
+        }
+    }
+    /*Создайте метод threesome(), который будет ловить MyException,
+    MyException2 и MyException3 в одном catch блоке.*/
+//    public void threesome() {
+//        try {
+//            String str = null;
+//            str.length();
+//        } catch (MyException | MyException2 | MyException3 ex){
+//            System.out.println("Исключение из метода threesome()");
+//            throw ex;
+//        }
+    }
+
