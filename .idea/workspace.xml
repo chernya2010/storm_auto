@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7636d53f-21ed-40bc-98b3-ebeb114d4df1" name="Changes" comment="" />
+    <list default="true" id="7636d53f-21ed-40bc-98b3-ebeb114d4df1" name="Changes" comment="first_test">
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/Homework1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/Homework2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/Homework3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/Homework4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,10 +23,19 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
   <component name="ProjectId" id="2jL2k8nV6epm0cynNVxmO854pzk" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -29,9 +44,13 @@
   "keyToString": {
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "TestNG.Homework1.executor": "Run",
+    "TestNG.Homework4.executor": "Run",
     "TestNG.ShareLaneTest.executor": "Run",
+    "git-widget-placeholder": "lesson1__hw",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Stormnet/SauceDemo",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -52,6 +71,30 @@
       <option name="presentableId" value="Default" />
       <updated>1721152178228</updated>
     </task>
+    <task id="LOCAL-00001" summary="first_test">
+      <option name="closed" value="true" />
+      <created>1721156851347</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1721156851347</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first_test" />
+    <option name="LAST_COMMIT_MESSAGE" value="first_test" />
   </component>
 </project>
