@@ -25,6 +25,6 @@ public class NotoficationMessages {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@id='flash']")));
         WebElement notificationText = driver.findElement(By.xpath("//div[@id='flash']"));
-        Assert.assertEquals(notificationText.getText(), "Action successful\n" + "×");
+        Assert.assertEquals(notificationText.getText().split("\n")[0], "Action successful");
     }
 }

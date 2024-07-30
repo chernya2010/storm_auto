@@ -21,7 +21,7 @@ public class AddRemoveElements {
         driver.findElement(By.xpath("//button[text()='Add Element']")).click();
         driver.findElement(By.xpath("//button[text()='Delete']")).click();
         int countOfElements = driver.findElements(By.xpath("//*[@id='elements']")).size();
-        Assert.assertEquals(String.valueOf(countOfElements), "1");
+        Assert.assertEquals(countOfElements, 1);
         driver.close();
     }
 }

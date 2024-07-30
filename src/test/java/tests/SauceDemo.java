@@ -16,7 +16,7 @@ public class SauceDemo {
     Проверить (assertEquals) стоимость товара и его имя в корзине
     */
     @Test
-    public void sauceLabTest() {
+    public void correctProductNameAndPriceTest() {
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.saucedemo.com/");
