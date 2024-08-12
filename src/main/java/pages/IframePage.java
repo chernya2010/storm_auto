@@ -36,7 +36,7 @@ public class IframePage extends BasePage implements IConstants {
      *
      * @return the iframe page
      */
-    public IframePage openIframe(){
+    public IframePage switchToIframe(){
        driver.switchTo().frame(iframe);
        return this;
     }
@@ -46,7 +46,7 @@ public class IframePage extends BasePage implements IConstants {
      *
      * @return the iframe page
      */
-    public IframePage closeIframe(){
+    public IframePage switchToDefaultContent(){
         driver.switchTo().defaultContent();
         return this;
     }

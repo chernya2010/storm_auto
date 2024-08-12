@@ -8,19 +8,19 @@ import org.openqa.selenium.support.FindBy;
 public class AlertPage extends BasePage implements IConstants {
 
     @FindBy(xpath = "//button[normalize-space()='Click for JS Alert']")
-    WebElement alertButton;
+    WebElement alertTypeButton;
     @FindBy(xpath = "//p[@id='result']")
-    public WebElement alertResultMessage;
+    public WebElement alertTypeResultMessage;
     @FindBy(xpath = "//button[normalize-space()='Click for JS Confirm']")
-    WebElement confirmButton;
+    WebElement confirmTypeButton;
     @FindBy(xpath = "//p[@id='result']")
-    public WebElement confirmAcceptResultMessage;
+    public WebElement confirmTypeAcceptResultMessage;
     @FindBy(xpath = "//p[@id='result']")
-    public WebElement confirmDeclineResultMessage;
+    public WebElement confirmTypeDeclineResultMessage;
     @FindBy(xpath = "//button[normalize-space()='Click for JS Prompt']")
-    WebElement promptButton;
+    WebElement promptTypeButton;
     @FindBy(xpath = "//p[@id='result']")
-    public WebElement promptResultMessage;
+    public WebElement promptTypeResultMessage;
 
     /**
      * Instantiates a new Alert page.
@@ -46,8 +46,8 @@ public class AlertPage extends BasePage implements IConstants {
      *
      * @return the alert page
      */
-    public AlertPage callJsAlert(){
-        alertButton.click();
+    public AlertPage clickJSAllertButton(){
+        alertTypeButton.click();
         return this;
     }
 
@@ -56,7 +56,7 @@ public class AlertPage extends BasePage implements IConstants {
      *
      * @return the alert page
      */
-    public AlertPage acceptJsAlert(){
+    public AlertPage acceptJsAlertType(){
         driver.switchTo().alert().accept();
         return this;
     }
@@ -66,17 +66,17 @@ public class AlertPage extends BasePage implements IConstants {
      *
      * @return the string
      */
-    public String getJsAlertMessageText(){
-        return alertResultMessage.getText();
+    public String getJsAlertTypeMessageText(){
+        return alertTypeResultMessage.getText();
     }
-/////////////////////
+
     /**
      * Call js confirm alert page.
      *
      * @return the alert page
      */
-    public AlertPage callJsConfirm(){
-        confirmButton.click();
+    public AlertPage clickJSConfirmTypeButton(){
+        confirmTypeButton.click();
         return this;
     }
 
@@ -85,7 +85,7 @@ public class AlertPage extends BasePage implements IConstants {
      *
      * @return the alert page
      */
-    public AlertPage acceptJsConfirm(){
+    public AlertPage acceptJsConfirmType(){
         driver.switchTo().alert().accept();
         return this;
     }
@@ -95,7 +95,7 @@ public class AlertPage extends BasePage implements IConstants {
      *
      * @return the alert page
      */
-    public AlertPage declineJsConfirm(){
+    public AlertPage declineJsConfirmType(){
         driver.switchTo().alert().dismiss();
         return this;
     }
@@ -105,8 +105,8 @@ public class AlertPage extends BasePage implements IConstants {
      *
      * @return the string
      */
-    public String getJsAcceptConfirmMessageText(){
-        return confirmAcceptResultMessage.getText();
+    public String getJsAcceptTypeConfirmMessageText(){
+        return confirmTypeAcceptResultMessage.getText();
     }
 
     /**
@@ -114,17 +114,17 @@ public class AlertPage extends BasePage implements IConstants {
      *
      * @return the string
      */
-    public String getJsDeclineConfirmMessageText(){
-        return confirmDeclineResultMessage.getText();
+    public String getJsDeclineConfirmTypeMessageText(){
+        return confirmTypeDeclineResultMessage.getText();
     }
-////////////////////
+
     /**
      * Call js prompt alert page.
      *
      * @return the alert page
      */
-    public AlertPage callJsPrompt(){
-        promptButton.click();
+    public AlertPage clickJSPromptTypeButton(){
+        promptTypeButton.click();
         return this;
     }
 
@@ -134,7 +134,7 @@ public class AlertPage extends BasePage implements IConstants {
      * @param text the text
      * @return the alert page
      */
-    public AlertPage confirmJsPrompt(String text){
+    public AlertPage confirmJsPromptType(String text){
         driver.switchTo().alert().sendKeys(text);
         driver.switchTo().alert().accept();
         return this;
@@ -145,7 +145,7 @@ public class AlertPage extends BasePage implements IConstants {
      *
      * @return the string
      */
-    public String getJsPromptMessageText(){
-        return promptResultMessage.getText();
+    public String getJsPromptTypeMessageText(){
+        return promptTypeResultMessage.getText();
     }
 }

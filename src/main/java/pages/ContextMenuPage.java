@@ -33,7 +33,7 @@ public class ContextMenuPage extends BasePage implements IConstants {
     /**
      * Call allert message.
      */
-    public ContextMenuPage callAllertMessage(){
+    public ContextMenuPage contextClickToCallAllert(){
         Actions action = new Actions(driver);
         action.contextClick(alertArea).perform();
         return this;

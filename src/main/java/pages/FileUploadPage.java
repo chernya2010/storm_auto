@@ -32,7 +32,7 @@ public class FileUploadPage extends BasePage implements IConstants {
      * @return the file upload page
      */
     public FileUploadPage openPage(){
-        driver.get(FILE_UPLOADE_PAGE_URL);
+        driver.get(FILE_UPLOAD_PAGE_URL);
         return this;
     }
 
@@ -53,7 +53,7 @@ public class FileUploadPage extends BasePage implements IConstants {
      *
      * @return the file upload page
      */
-    public FileUploadPage uploadFile(){
+    public FileUploadPage clickUploadFileButton(){
         uploadFileButton.click();
         return this;
     }

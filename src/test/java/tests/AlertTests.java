@@ -4,21 +4,21 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class AlertTests extends BaseTest {
-    private static final String JS_ALERT_SUCCESS_TEXT = "You successfully clicked an alert";
-    private static final String JS_CONFIRM_SUCCESS_TEXT = "You clicked: Ok";
-    private static final String JS_CONFIRM_DECLINE_TEXT = "You clicked: Cancel";
-    private static final String JS_PROMPT_SUCCESS_TEXT = "You entered: Text";
+    private static final String JS_ALERT_TYPE_SUCCESS_TEXT = "You successfully clicked an alert";
+    private static final String JS_CONFIRM_TYPE_SUCCESS_TEXT = "You clicked: Ok";
+    private static final String JS_CONFIRM_TYPE_DECLINE_TEXT = "You clicked: Cancel";
+    private static final String JS_PROMPT_TYPE_SUCCESS_TEXT = "You entered: Text";
 
     /**
      * Check js alert test.
      */
     @Test
-    public void checkJsAlertTest(){
+    public void checkJsAlertTypeTest(){
         alertPage
                 .openPage()
-                .callJsAlert()
-                .acceptJsAlert();
-        Assert.assertEquals(JS_ALERT_SUCCESS_TEXT, alertPage.getJsAlertMessageText());
+                .clickJSAllertButton()
+                .acceptJsAlertType();
+        Assert.assertEquals(JS_ALERT_TYPE_SUCCESS_TEXT, alertPage.getJsAlertTypeMessageText());
         driver.close();
     }
 
@@ -26,12 +26,12 @@ public class AlertTests extends BaseTest {
      * Check js confirm decline test.
      */
     @Test
-    public void checkJsConfirmDeclineTest(){
+    public void checkJsConfirmTypeDeclineTest(){
         alertPage
                 .openPage()
-                .callJsConfirm()
-                .declineJsConfirm();
-        Assert.assertEquals(JS_CONFIRM_DECLINE_TEXT, alertPage.getJsDeclineConfirmMessageText());
+                .clickJSConfirmTypeButton()
+                .declineJsConfirmType();
+        Assert.assertEquals(JS_CONFIRM_TYPE_DECLINE_TEXT, alertPage.getJsDeclineConfirmTypeMessageText());
         driver.close();
     }
 
@@ -39,12 +39,12 @@ public class AlertTests extends BaseTest {
      * Check js prompt accept test.
      */
     @Test
-    public void checkJsPromptAcceptTest(){
+    public void checkJsPromptTypeAcceptTest(){
         alertPage
                 .openPage()
-                .callJsPrompt()
-                .confirmJsPrompt("Text");
-        Assert.assertEquals(JS_PROMPT_SUCCESS_TEXT, alertPage.getJsPromptMessageText());
+                .clickJSPromptTypeButton()
+                .confirmJsPromptType("Text");
+        Assert.assertEquals(JS_PROMPT_TYPE_SUCCESS_TEXT, alertPage.getJsPromptTypeMessageText());
         driver.close();
     }
 }

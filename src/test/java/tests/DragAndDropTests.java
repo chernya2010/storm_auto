@@ -11,7 +11,6 @@ public class DragAndDropTests extends BaseTest{
     @FindBy(xpath = "//div[@id='column-b']")
     WebElement elementB;
 
-
     /**
      * Drag and drop element a on element b test.
      */

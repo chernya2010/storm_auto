@@ -13,7 +13,7 @@ public class IframeTests extends BaseTest{
     public void checkTextInsideIframeTest(){
         iframePage
                 .openPage()
-                .openIframe();
+                .switchToIframe();
         Assert.assertEquals(IFRAME_TEXT, iframePage.getIframeText());
         driver.close();
     }

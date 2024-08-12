@@ -15,7 +15,7 @@ public class FileUploadTests extends BaseTest{
         fileUploadPage
                 .openPage()
                 .getFileToUpload()
-                .uploadFile();
+                .clickUploadFileButton();
         Assert.assertEquals(UPLOADED_FILE_NAME, fileUploadPage.getUploadedFileName());
         driver.close();
     }

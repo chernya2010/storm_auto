@@ -11,11 +11,10 @@ public class FileDownloadTests extends BaseTest{
      * @throws InterruptedException the interrupted exception
      */
     @Test
-    public void checkTheFileInFolder() throws InterruptedException {
-        fileDownloadePage
+    public void checkFileInFolder(){
+        fileDownloadPage
                 .openPage()
-                .downloadFile()
-                .checkFileInFolder();
-        Assert.assertTrue(fileDownloadePage.checkFileInFolder());
+                .downloadFile("random_data.txt");
+        Assert.assertTrue(fileDownloadPage.checkFileInFolder("random_data"));
     }
 }

@@ -13,7 +13,7 @@ public class ContextMenuTest extends BaseTest{
     public void checkAlertMessageTextTest(){
         contextMenuPage
                 .openPage()
-                .callAllertMessage();
+                .contextClickToCallAllert();
         Assert.assertEquals(ALERT_MESSAGE_TEXT, contextMenuPage.getAlertMessageText());
         contextMenuPage
                 .closeAlertMessage();

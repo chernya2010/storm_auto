@@ -12,7 +12,7 @@ public class JsExecutorTests extends BaseTest{
     public void scrollPageTest(){
         jsExecutorPage
                 .openPage()
-                .scrollPageByNumberOfPixels()
+                .scrollPageByNumberOfPixels("50")
                 .scrollPageToSpecificElement(SCROLL_TO_ELEMENT_LOCATOR)
                 .scrollPageToTheBottom()
                 .scrollPageToTheTop();

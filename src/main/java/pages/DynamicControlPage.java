@@ -5,7 +5,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.time.Duration;
 import java.util.List;
 
 public class DynamicControlPage extends BasePage implements IConstants {
@@ -41,7 +44,7 @@ public class DynamicControlPage extends BasePage implements IConstants {
      * @return the dynamic control page
      */
     public DynamicControlPage openPage(){
-        driver.get(DYNAMIC_CONTRILS_PAGE_URL);
+        driver.get(DYNAMIC_CONTROLS_PAGE_URL);
         return this;
     }
 
@@ -52,13 +55,13 @@ public class DynamicControlPage extends BasePage implements IConstants {
      */
     public boolean isCheckboxVisible(){
         List<WebElement> checkboxesList = driver.findElements(By.id(CHECKBOX));
-        return checkboxesList.isEmpty();
+        return !checkboxesList.isEmpty();
     }
 
     /**
      * Add checkbox.
      */
-    public DynamicControlPage addCheckbox(){
+    public DynamicControlPage clickAddCheckboxButton(){
         addCheckboxButton.click();
         return this;
     }
@@ -66,7 +69,7 @@ public class DynamicControlPage extends BasePage implements IConstants {
     /**
      * Remove checkbox.
      */
-    public DynamicControlPage removeCheckbox(){
+    public DynamicControlPage clickRemoveCheckboxButton(){
         removeCheckboxButton.click();
         return this;
     }
@@ -92,7 +95,7 @@ public class DynamicControlPage extends BasePage implements IConstants {
     /**
      * Enable input field.
      */
-    public DynamicControlPage enableInputField(){
+    public DynamicControlPage clickEnableInputField(){
         enableInputButton.click();
         return this;
     }
@@ -100,7 +103,7 @@ public class DynamicControlPage extends BasePage implements IConstants {
     /**
      * Disable input field.
      */
-    public DynamicControlPage disableInputField(){
+    public DynamicControlPage clickDisableInputField(){
         disableInputButton.click();
         return this;
     }
@@ -112,5 +115,11 @@ public class DynamicControlPage extends BasePage implements IConstants {
      */
     public String getInputFieldMessage(){
         return inputFieldMessage.getText();
+    }
+
+    public DynamicControlPage waitUntilElementVisible(WebElement element){
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.visibilityOf(element));
+        return this;
     }
 }

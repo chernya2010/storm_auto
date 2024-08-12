@@ -32,9 +32,9 @@ public class JsExecutorPage extends BasePage implements IConstants {
      *
      * @return the js executor page
      */
-    public JsExecutorPage scrollPageByNumberOfPixels(){
+    public JsExecutorPage scrollPageByNumberOfPixels(String numberOfPixels){
         JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("window.scrollBy(0,50)");
+        js.executeScript("window.scrollBy(0," + numberOfPixels + ")");
         return this;
     }
 
