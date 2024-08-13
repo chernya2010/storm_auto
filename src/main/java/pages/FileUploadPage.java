@@ -43,8 +43,7 @@ public class FileUploadPage extends BasePage implements IConstants {
      */
     public FileUploadPage getFileToUpload(){
         File uploadFile = new File(FILE_PATH);
-        WebElement fileInput = chooseFileButton;
-        fileInput.sendKeys(uploadFile.getAbsolutePath());
+        chooseFileButton.sendKeys(uploadFile.getAbsolutePath());
         return this;
     }
 

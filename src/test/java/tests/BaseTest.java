@@ -29,17 +29,16 @@ public class BaseTest {
     @BeforeMethod
     public void initTest(){
         WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        initPages();
-        PageFactory.initElements(driver, this);
-        WebDriverManager.chromedriver().setup();
         HashMap<String, Object> chromePrefs = new HashMap<>();
         chromePrefs.put("profile.default_content_settings.popups", 0);
-        System.setProperty("user.dir", "D:/Stormnet/HerokuAppNew/downloaded_files");
+        System.setProperty("user.dir", System.getProperty("user.dir") + "\\src\\test\\java\\tests");
         chromePrefs.put("download.default_directory", System.getProperty("user.dir"));
         ChromeOptions options = new ChromeOptions();
         options.setExperimentalOption("prefs", chromePrefs);
+        driver = new ChromeDriver(options);
+        driver.manage().window().maximize();
+        initPages();
+        PageFactory.initElements(driver, this);
     }
 
     /**

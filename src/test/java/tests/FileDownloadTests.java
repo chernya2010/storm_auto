@@ -14,7 +14,7 @@ public class FileDownloadTests extends BaseTest{
     public void checkFileInFolder(){
         fileDownloadPage
                 .openPage()
-                .downloadFile("random_data.txt");
-        Assert.assertTrue(fileDownloadPage.checkFileInFolder("random_data"));
+                .downloadFile("some-file.txt");
+        Assert.assertTrue(fileDownloadPage.checkFileInFolder("some-file.txt"));
     }
 }

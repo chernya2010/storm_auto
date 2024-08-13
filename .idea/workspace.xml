@@ -6,23 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="7636d53f-21ed-40bc-98b3-ebeb114d4df1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/constants/IConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/constants/IConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/AlertPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/AlertPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ContextMenuPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ContextMenuPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/DynamicControlPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/DynamicControlPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/FileDownloadePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/FileDownloadPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/FileUploadPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/FileUploadPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/IframePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/IframePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/JsExecutorPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/JsExecutorPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/AlertTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/AlertTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/FileDownloadPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/FileDownloadPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/ContextMenuTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/ContextMenuTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/DragAndDropTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/DragAndDropTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/DynamicControlTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/DynamicControlTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/FileDownloadTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/FileDownloadTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/FileUploadTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/FileUploadTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/IframeTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/IframeTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/JsExecutorTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/JsExecutorTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,32 +38,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "TestNG.AlertTests.checkJsAlertTest.executor": "Run",
-    "TestNG.AlertTests.checkJsConfirmDeclineTest.executor": "Run",
-    "TestNG.AlertTests.checkJsPromptAcceptTest.executor": "Run",
-    "TestNG.ContextMenuTest.checkAlertMessageTextTest.executor": "Run",
-    "TestNG.DragAndDropTests.dragAndDropElementAOnElementBTest.executor": "Run",
-    "TestNG.DynamicControlTests.dynamicControlsTest.executor": "Run",
-    "TestNG.FileDownloadTests.checkFileInFolder.executor": "Run",
-    "TestNG.FileDownloadTests.checkTheFileInFolder.executor": "Run",
-    "TestNG.FileUploadTests.checkUploadedFileNameIsCorrectTest.executor": "Run",
-    "TestNG.IframeTests.checkTextInsideIframeTest.executor": "Run",
-    "TestNG.JsExecutorTests.scrollPageTest.executor": "Run",
-    "TestNG.ShareLaneTest.executor": "Run",
-    "git-widget-placeholder": "lesson6__auto__hw",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Stormnet/HerokuAppNew",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;TestNG.AlertTests.checkJsAlertTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AlertTests.checkJsConfirmDeclineTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AlertTests.checkJsPromptAcceptTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.ContextMenuTest.checkAlertMessageTextTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.DragAndDropTests.dragAndDropElementAOnElementBTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.DynamicControlTests.dynamicControlsTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.FileDownloadTests.checkFileInFolder.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.FileDownloadTests.checkTheFileInFolder.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.FileUploadTests.checkUploadedFileNameIsCorrectTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.IframeTests.checkTextInsideIframeTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.JsExecutorTests.scrollPageTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.ShareLaneTest.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;lesson6__auto__hw&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Stormnet/HerokuAppNew&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Stormnet\HerokuAppNew\src\test\resources" />

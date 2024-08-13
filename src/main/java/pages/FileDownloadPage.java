@@ -43,7 +43,7 @@ public class FileDownloadPage extends BasePage implements IConstants {
      * @return the boolean
      */
     public boolean checkFileInFolder(String downloadFileName){
-        File folder = new File(System.setProperty("user.dir", "D:/Stormnet/HerokuAppNew/downloaded_files"));
+        File folder = new File(System.getProperty("user.dir"));
         File[] listOfFiles = folder.listFiles();
         boolean found = false;
         File f = null;
@@ -57,9 +57,5 @@ public class FileDownloadPage extends BasePage implements IConstants {
             }
         }
         return found;
-    }
-
-    public void dowloadFile2(){
-
     }
 }
